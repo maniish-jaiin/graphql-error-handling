@@ -1,0 +1,20 @@
+type Query{
+    hello: String
+    getCar(input: String) : Car!
+}
+
+type Mutation{
+    createCar(input: CarInput): Car
+}
+
+type Car {
+    name: String
+    price: Int
+    engineType: String
+}
+
+input CarInput{
+    name: String!
+    price: Int!
+    engineType: String!
+}
